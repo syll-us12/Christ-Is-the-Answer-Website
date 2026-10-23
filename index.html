@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ Is the Answer | Saturday Word Sharing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a class="brand" href="#home">
+            <span class="cross">✝</span>
+            <span>
+                <strong>CHRIST IS THE ANSWER</strong>
+                <small>Saturday Word Sharing</small>
+            </span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#schedule">Choose Saturday</a>
+            <a href="#records">Bible Study Records</a>
+        </nav>
+
+        <a href="#schedule" class="nav-button">Volunteer to Share</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <span class="eyebrow">OUR FELLOWSHIP · GOD'S WORD</span>
+                <h1>Growing Together<br>Through <span>God's Word.</span></h1>
+                <p>
+                    Choose your Saturday, prepare your scripture,
+                    share your lessons and help us preserve our
+                    fellowship's Bible study journey throughout the year.
+                </p>
+                <a href="#schedule" class="primary-button">
+                    Choose My Saturday →
+                </a>
+                <p class="hero-verse">
+                    "Your word is a lamp for my feet, a light on my path."
+                    <strong>Psalm 119:105</strong>
+                </p>
+            </div>
+
+            <div class="hero-picture">
+                <div class="verse-card">
+                    <span>THE WORD OF GOD</span>
+                    <h2>Learn it.<br>Live it.<br>Share it.</h2>
+                    <p>Faith grows when we learn together.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="schedule">
+            <div class="section-heading">
+                <span class="eyebrow">YOUR OPPORTUNITY TO SERVE</span>
+                <h2>Choose Your Saturday</h2>
+                <p>
+                    Select an available Saturday and register the
+                    scripture you intend to share with the group.
+                </p>
+            </div>
+
+            <div class="year-bar">
+                <label for="yearSelect">Presentation year</label>
+                <select id="yearSelect"></select>
+            </div>
+
+            <div id="saturdayGrid" class="saturday-grid">
+                <p>Saturday dates will appear here.</p>
+            </div>
+
+            <section class="form-panel" id="presentationPanel" hidden>
+                <div class="section-heading">
+                    <span class="eyebrow">PREPARE YOUR MESSAGE</span>
+                    <h2>My Bible Presentation</h2>
+                    <p id="chosenDate"></p>
+                </div>
+
+                <form id="presentationForm">
+                    <input type="hidden" id="presentationDate">
+
+                    <label for="memberName">Your full name *</label>
+                    <input id="memberName" required
+                        placeholder="Enter your full name">
+
+                    <label for="whatsapp">WhatsApp number</label>
+                    <input id="whatsapp" type="tel"
+                        placeholder="e.g. 0712345678">
+
+                    <div class="form-row">
+                        <div>
+                            <label for="book">Bible book *</label>
+                            <input id="book" required
+                                placeholder="e.g. John">
+                        </div>
+                        <div>
+                            <label for="verses">Chapter and verses *</label>
+                            <input id="verses" required
+                                placeholder="e.g. 3:16–21">
+                        </div>
+                    </div>
+
+                    <label for="topic">Presentation topic *</label>
+                    <input id="topic" required
+                        placeholder="Enter your message topic">
+
+                    <label for="notes">Short notes *</label>
+                    <textarea id="notes" required rows="4"
+                        placeholder="Write the main points you will share..."></textarea>
+
+                    <label for="lessons">Lessons learnt *</label>
+                    <textarea id="lessons" required rows="4"
+                        placeholder="What have you learnt, and how can we apply it?"></textarea>
+
+                    <div class="form-actions">
+                        <button type="button" class="secondary-button"
+                            id="cancelButton">Cancel</button>
+                        <button type="submit" class="primary-button">
+                            Save Presentation
+                        </button>
+                    </div>
+                    <p id="formMessage" role="status"></p>
+                </form>
+            </section>
+        </section>
+
+        <section class="section records-section" id="records">
+            <div class="section-heading">
+                <span class="eyebrow">OUR SHARED SPIRITUAL JOURNEY</span>
+                <h2>Bible Study Records</h2>
+                <p>
+                    Revisit the scriptures, presentation notes and
+                    lessons shared by members throughout the year.
+                </p>
+            </div>
+
+            <input id="searchRecords" class="search-input"
+                placeholder="Search by Bible book, verse, topic or presenter...">
+
+            <div class="record-summary">
+                <div>
+                    <span>Presentations recorded</span>
+                    <strong id="recordCount">0</strong>
+                </div>
+                <div>
+                    <span>Different scripture references</span>
+                    <strong id="scriptureCount">0</strong>
+                </div>
+            </div>
+
+            <div id="recordsList" class="records-list">
+                <div class="empty-state">
+                    <span>📖</span>
+                    <h3>Our journey through the Word starts here</h3>
+                    <p>Saved presentations will appear here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="community">
+            <span class="eyebrow">FAITH · UNITY · SERVICE</span>
+            <h2>Let us grow together in God's Word.</h2>
+            <p>Every Saturday, a new opportunity to learn, share and encourage one another.</p>
+            <a href="#schedule" class="primary-button">Choose Your Saturday →</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <strong>✝ Christ Is the Answer Group</strong>
+        <p>Saturday Word Sharing · Growing together in faith</p>
+    </footer>
+</body>
+</html>
